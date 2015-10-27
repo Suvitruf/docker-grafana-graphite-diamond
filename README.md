@@ -36,3 +36,5 @@ As default you have one dashboard with some system metrics. You can add new if y
 You can enable different [Handlers](https://github.com/python-diamond/Diamond/wiki/Handlers) and [Collectors](https://github.com/python-diamond/Diamond/wiki/Collectors). By default enabled only: CPUCollector, DiskSpaceCollector, DiskUsageCollector, LoadAverageCollector, MemoryCollector, UptimeCollector. 
 
 Edit config file `./diamond/diamond.conf` if you need more metrics.
+
+P.S. this container based on [kamon docker-grafana-graphite](https://github.com/kamon-io/docker-grafana-graphite)
