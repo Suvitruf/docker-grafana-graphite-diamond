@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -z "$HOST_NAME" ]; then
+	if [ -n "$HOST_NAME_SHORT" ]; then
+		HOST_NAME=`echo "$HOST_NAME_SHORT"`
+	fi
+fi
+
+
+if [ -n "$HOST_NAME" ]; then
+  sed 's/{{host_name_short}}/'"$HOST_NAME"'/' -i /etc/diamond/diamond.conf;
+else
+	echo "Diamond: No HOST_NAME_SHORT defined. Aborting.";
+	exit 1;
+fi

@@ -1,0 +1,5 @@
+#! /bin/bash
+
+CONTAINER_NAME="suvitruf-grafana-dashboard"
+
+docker logs $CONTAINER_NAME
