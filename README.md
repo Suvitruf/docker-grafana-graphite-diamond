@@ -11,6 +11,10 @@ The container exposes the following ports:
 - `2003`: graphite port for plaintext.
 - `2004`: port to Carbon’s pickle receiver.
 
+
+### Using the Docker Index###
+This image is published under [Suvitruf's repository on the Docker Index](https://hub.docker.com/r/suvitruf/grafana_graphite/) and all you need as a prerequisite is having Docker installed on your machine.
+
 ### Building the image yourself ###
 To build container just run `build` script.
 
